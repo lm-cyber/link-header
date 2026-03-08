@@ -1,5 +1,7 @@
 # linkheader
 
+![banner](banner.png)
+
 Generate LinkedIn profile banner images (1584×396px) with multiple QR codes and favicon overlays.
 
 ## Installation
