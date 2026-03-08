@@ -1,4 +1,4 @@
-"""Favicon fetching for linkheader."""
+"""Favicon fetching for linkedin-banner."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""QR code generation for linkheader."""
+"""QR code generation for linkedin-banner."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from qrcode.image.styles.moduledrawers.pil import (  # type: ignore[import-untyp
 )
 from qrcode.main import QRCode  # type: ignore[import-untyped]
 
-from linkheader.exceptions import QRGenerationError
+from linkedin_banner.exceptions import QRGenerationError
 
 
 def _recolor(

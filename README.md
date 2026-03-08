@@ -1,4 +1,4 @@
-# linkheader
+# linkedin-banner
 
 ![banner](banner.png)
 
@@ -16,10 +16,10 @@ uv sync
 
 ```bash
 # Single QR code
-linkheader generate --url "https://github.com/user" --color midnight
+linkedin-banner generate --url "https://github.com/user" --color midnight
 
 # Multiple QR codes with favicons
-linkheader generate \
+linkedin-banner generate \
   --url "https://github.com/lm-cyber" \
   --url "https://www.kaggle.com/asdasdsadasdsasdasd" \
   --url "https://t.me/overfeat_and_data_leak" \
@@ -28,7 +28,7 @@ linkheader generate \
   --preview
 
 # 4 QR codes
-linkheader generate \
+linkedin-banner generate \
   --url "https://github.com/user" \
   --url "https://kaggle.com/user" \
   --url "https://t.me/user" \
@@ -52,7 +52,7 @@ linkheader generate \
 ### List palettes
 
 ```bash
-linkheader palettes
+linkedin-banner palettes
 ```
 
 Available palettes: midnight, ocean, forest, slate, burgundy, charcoal, navy, plum, steel, espresso, olive, graphite, teal, rust, indigo, sage.

@@ -1,8 +1,8 @@
-"""Color palette system for linkheader."""
+"""Color palette system for linkedin-banner."""
 
 from __future__ import annotations
 
-from linkheader.exceptions import InvalidColorError
+from linkedin_banner.exceptions import InvalidColorError
 
 PALETTES: dict[str, str] = {
     "midnight": "#1a1a2e",

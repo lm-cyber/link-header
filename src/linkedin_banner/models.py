@@ -1,4 +1,4 @@
-"""Data models for linkheader."""
+"""Data models for linkedin-banner."""
 
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ class BannerConfig(BaseModel):
     @classmethod
     def validate_color(cls, v: str) -> str:
         """Normalize and validate hex color or palette name."""
-        from linkheader.palette import PALETTES
+        from linkedin_banner.palette import PALETTES
 
         # Check if it's a palette name first
         if v.lower() in PALETTES:

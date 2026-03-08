@@ -192,7 +192,7 @@ wheels = [
 ]
 
 [[package]]
-name = "linkheader"
+name = "linkedin-banner"
 version = "0.2.0"
 source = { editable = "." }
 dependencies = [

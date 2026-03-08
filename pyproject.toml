@@ -3,9 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "linkheader"
+name = "linkedin-banner"
 version = "0.2.0"
 description = "Generate LinkedIn profile banner images with QR codes"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "pillow>=10.1",
@@ -17,10 +18,10 @@ dependencies = [
 ]
 
 [project.scripts]
-linkheader = "linkheader.cli:main"
+linkedin-banner = "linkedin_banner.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/linkheader"]
+packages = ["src/linkedin_banner"]
 
 [dependency-groups]
 dev = [

@@ -1,4 +1,4 @@
-"""Banner image generation for linkheader."""
+"""Banner image generation for linkedin-banner."""
 
 from __future__ import annotations
 
@@ -6,11 +6,11 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
-from linkheader.exceptions import BannerGenerationError
-from linkheader.favicon import fetch_favicon
-from linkheader.models import BannerConfig, OutputFormat, PatternStyle
-from linkheader.palette import choose_text_color, hex_to_rgb, lighten, resolve_color
-from linkheader.qr import generate_qr, overlay_favicon
+from linkedin_banner.exceptions import BannerGenerationError
+from linkedin_banner.favicon import fetch_favicon
+from linkedin_banner.models import BannerConfig, OutputFormat, PatternStyle
+from linkedin_banner.palette import choose_text_color, hex_to_rgb, lighten, resolve_color
+from linkedin_banner.qr import generate_qr, overlay_favicon
 
 # Layout constants
 _AVATAR_ZONE = 280  # px from left reserved for LinkedIn profile photo

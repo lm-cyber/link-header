@@ -1,4 +1,4 @@
-"""CLI interface for linkheader."""
+"""CLI interface for linkedin-banner."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from typing import Annotated
 import typer
 
 app = typer.Typer(
-    name="linkheader",
+    name="linkedin-banner",
     help="Generate LinkedIn profile banner images with QR codes.",
     no_args_is_help=True,
 )
@@ -40,9 +40,9 @@ def generate(
     """Generate a LinkedIn banner image."""
     from rich.console import Console
 
-    from linkheader.exceptions import LinkheaderError
-    from linkheader.generator import generate_banner, save_banner
-    from linkheader.models import BannerConfig
+    from linkedin_banner.exceptions import LinkedinBannerError
+    from linkedin_banner.generator import generate_banner, save_banner
+    from linkedin_banner.models import BannerConfig
 
     console = Console()
 
@@ -64,7 +64,7 @@ def generate(
         if preview:
             _open_preview(str(path))
 
-    except LinkheaderError as e:
+    except LinkedinBannerError as e:
         console.print(f"[bold red]Error:[/bold red] {e}")
         raise typer.Exit(code=1) from None
     except Exception as e:
@@ -78,7 +78,7 @@ def palettes() -> None:
     from rich.console import Console
     from rich.table import Table
 
-    from linkheader.palette import PALETTES
+    from linkedin_banner.palette import PALETTES
 
     console = Console()
     table = Table(title="Available Palettes")
