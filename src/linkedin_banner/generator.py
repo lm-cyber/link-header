@@ -82,7 +82,7 @@ def generate_banner(config: BannerConfig) -> Image.Image:
 
         # Center the QR block in the available zone
         total_w = n * qr_size + (n - 1) * _QR_GAP
-        start_x = _AVATAR_ZONE + (available_width - total_w) // 2
+        start_x = config.width - _MARGIN_RIGHT - total_w
         qr_y = (config.height - qr_size) // 2
 
         # Generate and place each QR code
