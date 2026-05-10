@@ -22,7 +22,7 @@ linkedin-banner generate --url "https://github.com/user" --color midnight
 linkedin-banner generate \
   --url "https://github.com/lm-cyber" \
   --url "https://www.kaggle.com/asdasdsadasdsasdasd" \
-  --url "https://t.me/overfeat_and_data_leak" \
+  --url "https://t.me/overfit_and_data_leak" \
   --color midnight \
   --pattern dots \
   --preview
